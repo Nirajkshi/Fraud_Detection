@@ -95,20 +95,20 @@ credit-card-fraud-detection
 ├── app.py
 │   Streamlit dashboard for fraud detection
 │
-├── load_dataset.py
-│   Script to load dataset into MySQL database
+├── python_pipeline
+│   └── load_dataset.py
+│        Script to load dataset into MySQL database
 │
-├── creditcard.csv
+├── creditcard.csv (Kaggle dataset)
 │   Transaction dataset
 │
 ├── notebooks
-│   └── fraud_detection_analysis.ipynb
+│   ├──  fraud_detection_analysis.ipynb
+│   └── model
+│       ├── logistic_model.pkl
+│       └── scaler.pkl
 │
-├── model
-│   ├── logistic_model.pkl
-│   └── scaler.pkl
-│
-├── sql
+├── sql analysis
 │   ├── total_fraud_count.sql
 │   ├── risk_amount_bucket.sql
 │   ├── transaction_trend.sql
